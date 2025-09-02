@@ -49,16 +49,16 @@ public class BfhlController {
 
             // Build user_id
             // user_id pieces (used when not provided in request)
-            String fullName = (input.full_name == null ? "saiteja" : input.full_name)
+            String fullName = (input.full_name == null ? "srichaitanya" : input.full_name)
                     .toLowerCase().replace(" ", "_");
-            String dob = (input.dob_ddmmyyyy == null ? "16092004" : input.dob_ddmmyyyy);
+            String dob = (input.dob_ddmmyyyy == null ? "01062005" : input.dob_ddmmyyyy);
 
 // combine for user_id
             out.user_id = fullName + "_" + dob;
 
 // email & roll
-            out.email = (input.email == null ? "gourusaiteja1291@gmail.com" : input.email);
-            out.roll_number = (input.roll_number == null ? "22bce7009" : input.roll_number);
+            out.email = (input.email == null ? "srichaitanyapalem05@gmail.com" : input.email);
+            out.roll_number = (input.roll_number == null ? "22bce9672" : input.roll_number);
 
             StringBuilder onlyLetters = new StringBuilder();
 
